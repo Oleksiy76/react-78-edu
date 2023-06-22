@@ -1,4 +1,4 @@
-import Painting from "./components/Painting"
+import Painting from "./components/Painting";
 
 const data = {
   url: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640",
@@ -19,37 +19,44 @@ export default function App() {
         title={data.title}
         price={data.price}
         authorName={data.author.tag}
-        quantity = {data.quantity}
+        quantity={data.quantity}
       />
     </div>
   );
 }
 
+// class Counter extends React.Component {
+//   handleIncrement = () => {
+//     console.log("Кликнули в увеличить");
+//     console.log(this);
+//   };
 
+//   handleDecrement = () => {
+//     console.log("Кликнули в уменьшить");
+//   };
 
+//   render() {
+//     return (
+//       <div className="Counter">
+//         <span className="Counter_value">0</span>
 
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
+//         <div className="Counter_controls">
+//           <button type="button" onClick={this.handleIncrement}>
+//             Увеличить на 1
+//           </button>
+//           <button
+//             type="button"
+//             onClick={() => {
+//               console.log("Клик-");
+//               this.handleIncrement;
+//             }}
+//           >
+//             Уменьшить на 1
+//           </button>
+//         </div>
+//       </div>
+//     );
+//   }
 // }
 
-// export default App;
+// export default Counter;
